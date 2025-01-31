@@ -3,7 +3,6 @@ import numbers
 import numpy as np
 from collections import defaultdict
 
-
 def dtw__(X, Y):
   n = len(X)
   m = len(Y)
@@ -55,7 +54,7 @@ def dtw__(X, Y):
   # Step 4: Return the DTW distance and warping path
   return C[-1, -1], path
 
-def dtw_distance(x, y, radius=1, dist=None):
+def dtw___(x, y, radius=1, dist=None):
   x, y, dist = __prep_inputs(x, y, dist)
   return __fastdtw(x, y, radius, dist)
 

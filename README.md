@@ -27,6 +27,7 @@ Dataset got from `NoCopyRight Sound` with 150 audio with detail below:
 ├─ dtw.ipynb
 ├─ evaluation.ipynb
 ├─ ceremony.ipynb
+├─ app.py            # streamlit init
 ├─ csv
 │  ├─ train.csv
 │  └─ test.csv
