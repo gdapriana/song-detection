@@ -5,9 +5,9 @@ Discover the magic of music with **Song Detection**, your ultimate tool for reco
 ## Dataset
 Dataset got from `NoCopyRight Sound` with 150 audio with detail below:
 
-- **Sample Rate: **44.1 Khz (44100 sample)
-- **Channel: **2 (Stereo)
-- **Precission: **16bit
+- **Sample Rate:** 44.1 Khz (44100 sample)
+- **Channel:** 2 (Stereo)
+- **Precission:** 16bit
 - **Bitrate**: 320k
 
 > csv for train dataset:[﻿dataset train](https://docs.google.com/spreadsheets/d/1-JBYn8MiLIcnJwqT2j33H7iEbVIgCUDNdG68yBDW5zc/export?format=csv&id=1-JBYn8MiLIcnJwqT2j33H7iEbVIgCUDNdG68yBDW5zc&gid=1280949540)  
