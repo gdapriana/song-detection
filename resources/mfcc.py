@@ -51,7 +51,7 @@ def melbank__(signal, nfilt=40, sr=44100, NFFT=512):
       fbank[m - 1, k] = (bin[m + 1] - k) / (bin[m + 1] - bin[m])
   filter_banks = np.dot(signal, fbank.T)
   filter_banks = np.where(filter_banks == 0, np.finfo(float).eps, filter_banks)  # Numerical Stability
-  return 20 * np.log10(filter_banks)
+  return (20 * np.log10(filter_banks)), fbank
 
 def dct__(signal, coef=13):
   return dct(signal, type=2, axis=1, norm='ortho')[:, 1 : (coef + 1)]

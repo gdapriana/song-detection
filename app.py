@@ -21,7 +21,7 @@ if __name__ == '__main__':
       signal = framing__(signal, sampling_rate=sampling_rate, frame_size=1, frame_stride=0.5)
       signal = windowing__(signal, sampling_rate=sampling_rate, frame_size=1)
       signal = fft__(signal, NFFT=512)
-      signal = melbank__(signal, nfilt=40, sr=sampling_rate, NFFT=512)
+      signal, _ = melbank__(signal, nfilt=40, sr=sampling_rate, NFFT=512)
       signal = dct__(signal, coef=13)
 
       min_distance, results, exec_time = matching__(database=database, new_data=signal)
